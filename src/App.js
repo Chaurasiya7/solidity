@@ -2,22 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ethers, BrowserProvider, Contract, parseEther, formatEther } from 'ethers';
 
 // Replace with your newly deployed contract address
-const CONTRACT_ADDRESS = "0x3d768a6f4682de5c4ded6e1bcb554535ea7d767a"; // Update this after deployment
+const CONTRACT_ADDRESS = "0xb93a73d91d0b7bee20f869c0301864138bc11b09"; // Update this after deployment
 const CONTRACT_ABI = [
-	{
-		"inputs": [],
-		"name": "buyTicket",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "checkAndEndLottery",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
 	{
 		"inputs": [
 			{
@@ -72,6 +58,20 @@ const CONTRACT_ABI = [
 		],
 		"name": "TicketPurchased",
 		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "buyTicket",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "checkAndEndLottery",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	},
 	{
 		"inputs": [],
